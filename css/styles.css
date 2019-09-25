@@ -2,41 +2,45 @@
     font-family: 'GingerPeachy';
     font-style: normal;
     font-weight: normal;
-    src: url('./fonts/GINGP___.woff') format('woff');
+    src: url('../fonts/GINGP___.woff') format('woff');
   }
   @font-face {
     font-family: 'Gilroy-Bold';
     font-style: normal;
     font-weight: normal;
-    src: url('./fonts/Gilroy-Bold.woff') format('woff');
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
   }
   @font-face {
     font-family: 'Gilroy-Heavy';
     font-style: normal;
     font-weight: normal;
-    src: url('./fonts/Gilroy-Heavy.woff') format('woff');
+    src: url('../fonts/Gilroy-Heavy.woff') format('woff');
   }
   @font-face {
     font-family: 'Gilroy-Light';
     font-style: normal;
     font-weight: normal;
-    src: url('./fonts/Gilroy-Light.woff') format('woff');
+    src: url('../fonts/Gilroy-Light.woff') format('woff');
   }
   @font-face {
     font-family: 'Gilroy-Medium';
     font-style: normal;
     font-weight: normal;
-    src: url('./fonts/Gilroy-Medium.woff') format('woff');
+    src: url('../fonts/Gilroy-Medium.woff') format('woff');
   }
   @font-face {
     font-family: 'Gilroy-Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('./fonts/Gilroy-Regular.woff') format('woff');
+    src: url('../fonts/Gilroy-Regular.woff') format('woff');
   }
   
 
-
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 #circe{
     position: absolute;
     width: 105px;
@@ -44,10 +48,11 @@
     left: 113px;
     top: 58px;
 
-    font-family: Ginger Peachy NF;
+    font-family: "Ginger Peachy NF";
     font-size: 28px;
-    line-height: 38px;
+    line-height: 28px;
     text-align: center;
+    letter-spacing: -3px;
 
     color: #011B33;
 }
@@ -57,34 +62,67 @@
     width: 40px;
     height: 2px;
     display: block;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 
-h1{
-    position: absolute;
+
+.container{
+    /* position: absolute;
+    
+    left: 165px;
+    top: 172px; */
+    margin: 50px auto;
+    padding-left: 8rem;
     width: 1113px;
     height: 192px;
-    left: 165px;
-    top: 172px;
 
     font-family: Gilroy-ExtraBold;
-    font-size: 45px;
-    line-height: 53px;
-    text-align: center;
+    
 
     color: #011B33;
+}
+
+section{
+    font-size: 40px;
+    line-height: 50px;
+    font-family: Gilroy-Medium;
+
+}
+
+#faq{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#items{
+    padding-left: 4rem;
+}
+
+
+input{
+    
+    /* position: absolute; */
+    width: 580px;
+    height: 53px;
+    padding-left: 2rem;
+    /* left: 432px;
+    top: 239px; */
+
+    background: #FFFFFF;
+    border: 2px solid #011B33;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .case{  
     display: grid;
     grid-template-columns: 5fr 1fr;
     width: 941px;
-    height: 54px;
+    height: 27px;
     left: 250px;
     top: 336px;
-    margin-bottom: 3px;
-    margin-left: 15vw;
-    margin-right: 20vh;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background: #011B33;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
@@ -98,4 +136,29 @@ h1{
 
 .question{
     padding-left: 2rem;
+}
+
+.more{
+    margin-left: 5rem;
+}
+
+button{
+    padding: 0.2rem;
+    text-align: right;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #011B33;
+
+    font-family: Gilroy-Medium;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+footer{
+    position: absolute;
+    bottom: 2px;
+    left: 432px;
 }
